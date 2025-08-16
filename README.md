@@ -81,23 +81,22 @@ SAP BW System  -->  Metadata Extractor (ABAP/XML/SQL)  -->  AI Pipeline  -->  Ou
 * `Python` for orchestration and ETL
 * `LangChain` / `LlamaIndex` for RAG pipelines
 * `OpenAI GPT-4` or `Azure OpenAI` for code summarization
-* `ChromaDB`, `Weaviate` for vector storage
 * `Streamlit`, `Flask` for frontend UI
 * `Mermaid.js` for lineage diagrams
 * `Jupyter` for prototyping and notebooks
 
 ### ☁️ Deployment Options
 
-* Local script-based utility
 * Web-based internal tooling
 * Secure cloud deployment for enterprise (Azure, GCP, AWS)
 
 ---
 
-Example Prompts & Expected Outputs
+## 💬 Example Prompts & Outputs
 
-Prompt 1:
+### 📥 Prompt 1: Transformation Analysis
 
+```json
 {
   "object_type": "Transformation",
   "source": "ZODS_SALES",
@@ -107,23 +106,30 @@ Prompt 1:
     "code": "LOOP AT RESULT_PACKAGE..."
   }
 }
+```
 
-Expected Output:
+### 📤 Expected Output
 
+```json
 {
   "summary": "This end routine aggregates sales data by customer and month, applying currency conversion via function module Z_CONVERT_CURR. Fields ZNET_SALES and ZGROSS_PROFIT are calculated.",
   "dependencies": ["ZODS_SALES", "ZCUBE_PROFIT", "Z_CONVERT_CURR"],
   "lineage": "ZODS_SALES → ZCUBE_PROFIT"
 }
+```
 
-Prompt 2:
+### 🧠 Prompt 2: ABAP Routine Summary
 
-"Summarize the logic in the following ABAP start routine and identify any table or function module dependencies."
+> Summarize the logic in the following ABAP start routine and identify any table or function module dependencies.
 
-Output:
-	Bullet-point logic summary
-	Tables/functions used
-	Potential runtime issues (e.g., hard-coded values, SELECT SINGLE in loop)
+### ✅ Output Includes
+
+* Step-by-step logic explanation
+* Referenced function modules and tables
+* Code smell or performance warnings
+
+---
+
 
 Evaluation Strategy
 
