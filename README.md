@@ -1,17 +1,25 @@
 # section-mmba-final_project
-BW-AI-Agent: SAP BW Object Analyzer and Documentation Generator
+# 📊 BW-AI-Agent: SAP BW Object Analyzer and Documentation Generator
 
-Project Overview
-BW-AI-Agent is an intelligent assistant designed to analyze metadata and logic within SAP BW (Business Warehouse) environments. It scans BW objects (like InfoProviders, Transformations, DTPs, Queries), reads embedded ABAP code, traces object dependencies, and outputs structured technical documentation and lineage maps.
+## 🚀 Project Overview
 
-This project addresses the complexity and opacity of traditional SAP BW landscapes, where understanding data flow, logic, and dependencies across hundreds of interconnected objects often relies on tribal knowledge or laborious manual documentation.
+**BW-AI-Agent** is an intelligent assistant designed to analyze metadata and logic within SAP BW (Business Warehouse) environments. It scans BW objects (InfoProviders, Transformations, DTPs, Queries), reads embedded ABAP code, traces object dependencies, and outputs structured technical documentation and lineage maps.
+
+This project addresses the **complexity and opacity** of traditional SAP BW landscapes, where understanding data flow, logic, and dependencies across hundreds of interconnected objects often relies on tribal knowledge or laborious manual documentation.
 
 The agent is especially valuable for:
-	Upgrades to BW/4HANA
-	Transitions to SAP Datasphere
-	Migration projects to cloud data platforms like Snowflake, Databricks, or Azure Synapse
 
-By automating the discovery, documentation, and analysis process, the BW-AI-Agent significantly reduces manual effort, accelerates project timelines, and increases the accuracy of migration mappings and transformation logic translation.
+* ✅ Upgrades to **BW/4HANA**
+* ✅ Transitions to **SAP Datasphere**
+* ✅ Migrations to modern cloud data platforms such as **Snowflake**, **Databricks**, or **Azure Synapse**
+
+By automating the discovery, documentation, and analysis process, the BW-AI-Agent significantly:
+
+* 🔄 **Reduces manual effort**
+* ⚡ **Accelerates project timelines**
+* 🎯 **Increases accuracy** for migration and transformation logic translation
+
+---
 
 Use Case & Workflow
 
