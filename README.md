@@ -21,29 +21,34 @@ By automating the discovery, documentation, and analysis process, the BW-AI-Agen
 
 ---
 
-Use Case & Workflow
+## 🧩 Use Case & Workflow
 
-Target Users:
-	SAP BW Architects
-	Data Engineers
-	Consultants performing BW-to-Datasphere or BW-to-cloud transitions
-	Audit & Compliance teams
+### 👥 Target Users
 
-Workflow:
-1) The user extracts or connects metadata from SAP BW.
-2) The BW-AI-Agent processes metadata and code via AI pipelines.
-3) The system produces:
-   Lineage graphs
-   ABAP routine summaries
-   Field-level mappings
-   Query structure documentation
-4) The user downloads or integrates the outputs into project documentation, assessment reports, or migration plans and potentially use this to automate migration/upgrades
+* SAP BW Architects
+* Data Engineers
+* Migration Consultants
+* Audit & Compliance Teams
 
-AI Impact:
-	Automates metadata analysis, eliminating hours of manual inspection.
-	Summarizes complex ABAP logic using natural language.
-	Connects objects semantically, aiding lineage and impact assessment.
-	Generates clear documentation that supports knowledge transfer, compliance, and cloud data migration efforts.
+### 🔁 Workflow
+
+1. Extract metadata/code from SAP BW system
+2. Process metadata with AI pipelines
+3. Generate outputs:
+
+   * Lineage diagrams
+   * ABAP logic summaries
+   * Query definitions & field mappings
+4. Export results for documentation or use in modernization/migration plans
+
+### 💡 AI Value Add
+
+* 📚 Automates metadata analysis
+* 🧠 Summarizes complex ABAP logic
+* 🔗 Maps data lineage and object dependencies
+* 📝 Produces clear, reusable technical documentation
+
+---
 
 AI Features to Be Implemented
 
