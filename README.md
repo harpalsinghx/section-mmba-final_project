@@ -50,46 +50,49 @@ By automating the discovery, documentation, and analysis process, the BW-AI-Agen
 
 ---
 
-AI Features to Be Implemented
 
-Feature												Description																					Justification
+## 🤖 AI Features to Be Implemented
 
-Prompt Engineering									Carefully crafted prompts to interpret ABAP, metadata, and relationships.					Ensures consistency and structure in AI analysis across diverse object types.
+| Feature                                  | Description                                                       | Why It Matters                                                     |
+| ---------------------------------------- | ----------------------------------------------------------------- | ------------------------------------------------------------------ |
+| **Prompt Engineering**                   | Tailored prompts to handle ABAP logic and BW metadata             | Ensures accuracy and relevance in AI interpretations               |
+| **Structured Outputs**                   | Outputs in JSON, Markdown, or tabular formats                     | Enables integration into automated tooling and documentation flows |
+| **RAG (Retrieval-Augmented Generation)** | Connects to metadata store for context-aware prompts              | Improves precision and continuity of analysis                      |
+| **Vector Database**                      | Semantic indexing of BW objects and code (e.g., Chroma, Weaviate) | Enables quick retrieval of similar logic and relationships         |
+| **Evaluation Framework**                 | Unit tests, LLM accuracy checks, manual validations               | Ensures system effectiveness and correctness                       |
+| **Observability Tools**                  | Logs, traceability, performance metrics                           | Critical for enterprise-grade monitoring and governance            |
 
-Structured Outputs									Outputs in JSON or Markdown, including ABAP summaries, lineage trees, and data flows.		Enables downstream automation (e.g., documentation generation, visualization).
+---
 
-Retrieval-Augmented Generation (RAG)				Optional connection to a metadata/document store to provide object context 					Adds precision and context to LLM responses, especially in large landscapes.
+## 🛠️ Technical Approach
 
-Vector Database										Index and search past objects or code snippets semantically.								Enables historical comparison, reuse of transformation logic, and smart lookup.
+### 🏗️ Architecture Diagram
 
-Evaluation Framework								Manual and programmatic evaluation of output quality using checklists and criteria.			Ensures quality and prevents misinterpretation of logic.
-
-Observability Tools 								Track usage patterns, error rates, and latency.												Supports debugging, performance optimization, and audit trails.
-
-
-Technical Approach
-
-Architecture Overview:
-
+```
 SAP BW System  -->  Metadata Extractor (ABAP/XML/SQL)  -->  AI Pipeline  -->  Outputs
                                                            ↓
                                                  Vector DB / RAG Store
                                                            ↓
                                                    Structured Outputs + Docs
+```
 
+### ⚙️ Key Technologies
 
-Key Technologies:
-	Python for ETL, code orchestration
-	LangChain or LlamaIndex for prompt routing and RAG
-	OpenAI GPT-4 API (or Azure OpenAI) for ABAP/code summarization
-	ChromaDB or Weaviate as the vector store for object metadata
-	Mermaid.js for visual lineage diagrams
-	Jupyter Notebooks for prototype evaluation
+* `Python` for orchestration and ETL
+* `LangChain` / `LlamaIndex` for RAG pipelines
+* `OpenAI GPT-4` or `Azure OpenAI` for code summarization
+* `ChromaDB`, `Weaviate` for vector storage
+* `Streamlit`, `Flask` for frontend UI
+* `Mermaid.js` for lineage diagrams
+* `Jupyter` for prototyping and notebooks
 
-Deployment Options:
-	Local script-based utility
-	Lightweight web app for internal consultants
-	Enterprise deployment on Azure/GCP with secure BW connectivity
+### ☁️ Deployment Options
+
+* Local script-based utility
+* Web-based internal tooling
+* Secure cloud deployment for enterprise (Azure, GCP, AWS)
+
+---
 
 Example Prompts & Expected Outputs
 
