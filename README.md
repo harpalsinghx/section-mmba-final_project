@@ -1,7 +1,7 @@
 # section-mmba-final_project
-# 📊 BW-AI-Agent: SAP BW Object Analyzer and Documentation Generator
+#  BW-AI-Agent: SAP BW Object Analyzer and Documentation Generator
 
-## 🚀 Project Overview
+##  Project Overview
 
 **BW-AI-Agent** is an intelligent assistant designed to analyze metadata and logic within SAP BW (Business Warehouse) environments. It scans BW objects (InfoProviders, Transformations, DTPs, Queries), reads embedded ABAP code, traces object dependencies, and outputs structured technical documentation and lineage maps.
 
