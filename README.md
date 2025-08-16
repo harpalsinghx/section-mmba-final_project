@@ -129,30 +129,37 @@ SAP BW System  -->  Metadata Extractor (ABAP/XML/SQL)  -->  AI Pipeline  -->  Ou
 * Code smell or performance warnings
 
 ---
+## 📈 Evaluation Strategy
 
+### 🔍 Methods
 
-Evaluation Strategy
+* Manual review against known logic
+* Precision/recall testing on detected dependencies
+* SAP expert feedback
 
-We will use a combination of:
-	Manual QA: Comparing AI outputs to known documentation
-	Developer feedback on usefulness of ABAP summaries
-	Unit tests for prompt templates and output parsing
+### 📊 Metrics
 
-Metrics:
-	Accuracy of lineage mapping (manual validation)
-	Time saved per object compared to manual analysis
-	Feedback scores from expert SAP users
+* % accuracy of lineage mapping
+* Time saved vs manual review
+* ABAP summary quality ratings (from developers)
 
-Observability Plan
+---
 
-We plan to track:
-	Prompt execution logs and token usage (via LangChain or OpenAI SDK)
-	Error rates (e.g., parsing failures, missing outputs)
-	User interaction logs (which outputs are downloaded, revised, etc.)
+## 📡 Observability Plan
 
-We may also integrate with tools like:
+Track and monitor:
 
-Langfuse or PromptLayer for prompt monitoring
-Grafana + Prometheus for system metrics if deployed as a service
+* 🔎 Prompt performance and API usage
+* 🧾 Error logs and response failures
+* 📊 Usage analytics (object types, frequency)
+* 💸 Cost and latency metrics (OpenAI token usage)
 
-If you're a data engineer or SAP architect tired of tracing InfoObjects manually or reverse-engineering ABAP logic under time pressure — BW-AI-Agent is for you.
+### Tools
+
+* `Langfuse`, `PromptLayer` for prompt monitoring
+* `Grafana + Prometheus` for infra metrics
+* Usage log tracking for feedback loop
+
+---
+
+> 🧭 **If you're a data engineer or SAP architect tired of reverse-engineering transformations and manually tracing BW dependencies — BW-AI-Agent is your co-pilot for modernization.**
