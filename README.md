@@ -9,21 +9,21 @@ This project addresses the **complexity and opacity** of traditional SAP BW land
 
 The agent is especially valuable for:
 
-* ✅ Upgrades to **BW/4HANA**
-* ✅ Transitions to **SAP Datasphere**
-* ✅ Migrations to modern cloud data platforms such as **Snowflake**, **Databricks**, or **Azure Synapse**
+* Upgrades to **BW/4HANA**
+* Transitions to **SAP Datasphere**
+*  Migrations to modern cloud data platforms such as **Snowflake**, **Databricks**, or **Azure Synapse**
 
 By automating the discovery, documentation, and analysis process, the BW-AI-Agent significantly:
 
-* 🔄 **Reduces manual effort**
-* ⚡ **Accelerates project timelines**
-* 🎯 **Increases accuracy** for migration and transformation logic translation
+* **Reduces manual effort**
+* **Accelerates project timelines**
+*  **Increases accuracy** for migration and transformation logic translation
 
 ---
 
-## 🧩 Use Case & Workflow
+## Use Case & Workflow
 
-### 👥 Target Users
+###  Target Users
 
 * SAP BW Architects
 * Data Engineers
@@ -41,17 +41,17 @@ By automating the discovery, documentation, and analysis process, the BW-AI-Agen
    * Query definitions & field mappings
 4. Export results for documentation or use in modernization/migration plans
 
-### 💡 AI Value Add
+### AI Value Add
 
-* 📚 Automates metadata analysis
-* 🧠 Summarizes complex ABAP logic
-* 🔗 Maps data lineage and object dependencies
-* 📝 Produces clear, reusable technical documentation
+*  Automates metadata analysis
+*  Summarizes complex ABAP logic
+*  Maps data lineage and object dependencies
+* 📝Produces clear, reusable technical documentation
 
 ---
 
 
-## 🤖 AI Features to Be Implemented
+## AI Features to Be Implemented
 
 | Feature                                  | Description                                                       | Why It Matters                                                     |
 | ---------------------------------------- | ----------------------------------------------------------------- | ------------------------------------------------------------------ |
@@ -76,7 +76,7 @@ SAP BW System  -->  Metadata Extractor (ABAP/XML/SQL)  -->  AI Pipeline  -->  Ou
                                                    Structured Outputs + Docs
 ```
 
-### ⚙️ Key Technologies
+### ⚙ Key Technologies
 
 * `Python` for orchestration and ETL
 * `LangChain` / `LlamaIndex` for RAG pipelines
@@ -85,7 +85,7 @@ SAP BW System  -->  Metadata Extractor (ABAP/XML/SQL)  -->  AI Pipeline  -->  Ou
 * `Mermaid.js` for lineage diagrams
 * `Jupyter` for prototyping and notebooks
 
-### ☁️ Deployment Options
+### ☁Deployment Options
 
 * Web-based internal tooling
 * Secure cloud deployment for enterprise (Azure, GCP, AWS)
@@ -94,7 +94,7 @@ SAP BW System  -->  Metadata Extractor (ABAP/XML/SQL)  -->  AI Pipeline  -->  Ou
 
 ## 💬 Example Prompts & Outputs
 
-### 📥 Prompt 1: Transformation Analysis
+###  Prompt 1: Transformation Analysis
 
 ```json
 {
@@ -108,7 +108,7 @@ SAP BW System  -->  Metadata Extractor (ABAP/XML/SQL)  -->  AI Pipeline  -->  Ou
 }
 ```
 
-### 📤 Expected Output
+### Expected Output
 
 ```json
 {
@@ -118,26 +118,26 @@ SAP BW System  -->  Metadata Extractor (ABAP/XML/SQL)  -->  AI Pipeline  -->  Ou
 }
 ```
 
-### 🧠 Prompt 2: ABAP Routine Summary
+###  Prompt 2: ABAP Routine Summary
 
 > Summarize the logic in the following ABAP start routine and identify any table or function module dependencies.
 
-### ✅ Output Includes
+###  Output Includes
 
 * Step-by-step logic explanation
 * Referenced function modules and tables
 * Code smell or performance warnings
 
 ---
-## 📈 Evaluation Strategy
+##  Evaluation Strategy
 
-### 🔍 Methods
+###  Methods
 
 * Manual review against known logic
 * Precision/recall testing on detected dependencies
 * SAP expert feedback
 
-### 📊 Metrics
+###  Metrics
 
 * % accuracy of lineage mapping
 * Time saved vs manual review
@@ -145,14 +145,13 @@ SAP BW System  -->  Metadata Extractor (ABAP/XML/SQL)  -->  AI Pipeline  -->  Ou
 
 ---
 
-## 📡 Observability Plan
+## Observability Plan
 
 Track and monitor:
 
-* 🔎 Prompt performance and API usage
-* 🧾 Error logs and response failures
-* 📊 Usage analytics (object types, frequency)
-* 💸 Cost and latency metrics (OpenAI token usage)
+* Prompt performance and API usage
+* Error logs and response failures
+* Usage analytics (object types, frequency
 
 ### Tools
 
